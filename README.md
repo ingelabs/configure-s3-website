@@ -2,9 +2,13 @@
 
 This project is a fork from Lauri Lehmijoki's [configure-s3-website](https://github.com/laurilehmijoki/configure-s3-website). The upstream project [is not actively maintained](https://github.com/laurilehmijoki/configure-s3-website/issues/26#issuecomment-1586534812).
 
-The gem has been renamed to configure-s3-website-ng to allow uploading to RubyGems without collisions.
+This fork includes [changes](https://github.com/ingelabs/configure-s3-website/pull/1/commits/38ab91b07b253cecfafc036a172441546687e768) required since April 2023 due to a change in the default configuration in S3 buckets.
+
+The gem has been renamed to configure-s3-website-ng to allow uploading to [RubyGems](https://rubygems.org/gems/configure-s3-website-ng) without collisions.
 
 The original README follows.
+
+----
 
 # Configure-s3-website
 
