@@ -39,7 +39,7 @@ describe ConfigureS3Website::CloudFrontClient do
       }
     })
     allow(get_distribution_response).to receive_message_chain(:distribution, :distribution_config, :caller_reference) { 'ref' }
-    allow(cloudfront_client).to receive(:get_distribution).with(:id => 'AEEEE').and_return(get_distribution_response)
+    allow(cloudfront_client).to receive(:get_distribution).with({:id => 'AEEEE'}).and_return(get_distribution_response)
     cloudfront_client
   }
   before {
