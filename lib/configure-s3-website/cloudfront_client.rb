@@ -149,9 +149,7 @@ module ConfigureS3Website
     end
 
     def self.padding(amount)
-      padding = ''
-      amount.times { padding << " " }
-      padding
+      ' ' * amount
     end
 
     def self.deep_symbolize(value)
