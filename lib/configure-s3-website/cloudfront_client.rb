@@ -1,4 +1,4 @@
-require "aws-sdk"
+require "aws-sdk-cloudfront"
 require 'deep_merge'
 
 module ConfigureS3Website
