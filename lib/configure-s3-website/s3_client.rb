@@ -3,7 +3,7 @@ require 'openssl'
 require 'digest/sha1'
 require 'digest/md5'
 require 'net/https'
-require 'aws-sdk'
+require 'aws-sdk-s3'
 
 module ConfigureS3Website
   class S3Client
