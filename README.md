@@ -1,19 +1,29 @@
-# Notice
+# Configure-s3-website-ng
 
-This project is a fork from Lauri Lehmijoki's [configure-s3-website](https://github.com/laurilehmijoki/configure-s3-website). The upstream project [is not actively maintained](https://github.com/laurilehmijoki/configure-s3-website/issues/26#issuecomment-1586534812).
+[![Gem Version](https://img.shields.io/gem/v/configure-s3-website-ng)](https://rubygems.org/gems/configure-s3-website-ng)
 
-This fork includes [changes](https://github.com/ingelabs/configure-s3-website/pull/1/commits/38ab91b07b253cecfafc036a172441546687e768) required since April 2023 due to a change in the default configuration in S3 buckets.
+Configure an AWS S3 bucket to function as a website easily from a command-line interface.
 
-The gem has been renamed to configure-s3-website-ng to allow uploading to [RubyGems](https://rubygems.org/gems/configure-s3-website-ng) without collisions.
-
-The original README follows.
+> [!NOTE]
+> This project is a fork from Lauri Lehmijoki's [configure-s3-website](https://github.com/laurilehmijoki/configure-s3-website). The upstream project [is not actively maintained](https://github.com/laurilehmijoki/configure-s3-website/issues/26#issuecomment-1586534812).
+>
+> The gem has been renamed to `configure-s3-website-ng` to allow uploading to [RubyGems](https://rubygems.org/gems/configure-s3-website-ng) without collisions.
+>
+> Changes in this fork ([full changelog](changelog.md)):
+>
+> - 3.1.0: Switch to the modular AWS SDK v3 gems and add support for Ruby 4.0
+> - 3.0.0: Delete the S3 bucket's public access block before applying the public-read bucket policy. Required since April 2023 due to a change in the default configuration in S3 buckets.
+>
+> The original README follows.
 
 ----
 
 # Configure-s3-website
 
+<!--
 [![Build Status](https://secure.travis-ci.org/laurilehmijoki/configure-s3-website.png)](http://travis-ci.org/laurilehmijoki/configure-s3-website)
 [![Gem Version](https://fury-badge.herokuapp.com/rb/configure-s3-website.png)](http://badge.fury.io/rb/configure-s3-website)
+-->
 
 Configure an AWS S3 bucket to function as a website easily from a command-line interface.
 

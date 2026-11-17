@@ -2,6 +2,19 @@
 
 This project uses [Semantic Versioning](http://semver.org).
 
+## 3.1.0
+
+* Replace the `aws-sdk` v2 gem with the modular AWS SDK v3 gems (`aws-sdk-s3`
+  and `aws-sdk-cloudfront`)
+* Add support for Ruby 4.0
+
+## 3.0.0
+
+* First release of the fork, published as `configure-s3-website-ng`
+* Delete the bucket's public access block before applying the public-read
+  bucket policy. Required since April 2023 due to a change in the default
+  configuration in S3 buckets.
+
 ## 2.3.0
 
 * Add support for default credentials providers
